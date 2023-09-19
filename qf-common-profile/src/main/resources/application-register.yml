@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NOCOS_HOST:qf-nacos}:${NACOS_PORT:8848}
+        #server-addr: ${NOCOS_HOST:127.0.0.1}:${NACOS_PORT:8848}
+

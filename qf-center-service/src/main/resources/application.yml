@@ -1,0 +1,37 @@
+server:
+  port: 6200
+spring:
+  application:
+    name: @project.artifactId@
+  profiles:
+    active:
+      - server
+      - register
+      - mysql
+      - redis
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+  redis:
+    database: 0
+  cache:
+    redis:
+      time-to-live: ${CACHE_REDIS_TIME_TO_LIVE:12H}
+
+springdoc:
+  swagger-ui:
+    # 修改Swagger UI路径
+    path: /swagger-ui.html
+    # 开启Swagger UI界面
+    enabled: true
+    api-docs:
+      # 修改api-docs路径
+      path: /v1/api-docs
+      # 开启api-docs
+      enabled: true
+    # 配置需要生成接口文档的扫描包
+    packages-to-scan: com.qf.service.api

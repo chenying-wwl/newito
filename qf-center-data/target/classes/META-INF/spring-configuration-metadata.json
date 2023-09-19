@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "doc-info",
+      "type": "com.qf.data.config.DocInfo",
+      "sourceType": "com.qf.data.config.DocInfo"
+    },
+    {
+      "name": "spring.cache.redis",
+      "type": "com.qf.data.config.RedisCacheConfig",
+      "sourceType": "com.qf.data.config.RedisCacheConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "doc-info.description",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.data.config.DocInfo"
+    },
+    {
+      "name": "doc-info.title",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.data.config.DocInfo"
+    },
+    {
+      "name": "doc-info.version",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.data.config.DocInfo"
+    },
+    {
+      "name": "doc-info.website-name",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.data.config.DocInfo"
+    },
+    {
+      "name": "doc-info.website-url",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.data.config.DocInfo"
+    }
+  ],
+  "hints": []
+}

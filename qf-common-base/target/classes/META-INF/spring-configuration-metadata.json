@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "server",
+      "type": "com.qf.common.config.ThreadPoolConfig",
+      "sourceType": "com.qf.common.config.ThreadPoolConfig"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

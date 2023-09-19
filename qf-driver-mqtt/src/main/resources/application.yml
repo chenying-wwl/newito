@@ -1,0 +1,45 @@
+server:
+  port: 8701
+spring:
+  application:
+    name: @project.artifactId@
+  profiles:
+    active:
+      - server
+      - register
+      - rabbitmq
+      - quartz
+      - mysql
+  main:
+    allow-bean-definition-overriding: true
+    mvc:
+      throw-exception-if-no-handler-found: true
+    web:
+      resources:
+        add-mappings: false
+driver:
+  mqtt:
+    url: tcp://1.12.255.11:1883
+    #url: tcp://8.142.142.111:1883
+    auth-type: USERNAME
+    username: qf
+    password: qf
+    client:  ${spring.application.name}
+    defaultSendTopic: default/${spring.application.name}
+    qos: 1
+
+
+springdoc:
+  swagger-ui:
+    # 修改Swagger UI路径
+    path: /swagger-ui.html
+    # 开启Swagger UI界面
+    enabled: true
+    api-docs:
+      # 修改api-docs路径
+      path: /v1/api-docs
+      # 开启api-docs
+      enabled: true
+    # 配置需要生成接口文档的扫描包
+    packages-to-scan: com.qf.driver.api
+

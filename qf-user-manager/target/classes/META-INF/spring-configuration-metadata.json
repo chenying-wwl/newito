@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "doc-info",
+      "type": "com.qf.user.manager.config.DocInfo",
+      "sourceType": "com.qf.user.manager.config.DocInfo"
+    }
+  ],
+  "properties": [
+    {
+      "name": "doc-info.description",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.user.manager.config.DocInfo"
+    },
+    {
+      "name": "doc-info.title",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.user.manager.config.DocInfo"
+    },
+    {
+      "name": "doc-info.version",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.user.manager.config.DocInfo"
+    },
+    {
+      "name": "doc-info.website-name",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.user.manager.config.DocInfo"
+    },
+    {
+      "name": "doc-info.website-url",
+      "type": "java.lang.String",
+      "sourceType": "com.qf.user.manager.config.DocInfo"
+    }
+  ],
+  "hints": []
+}

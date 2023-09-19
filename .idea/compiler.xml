@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="qf-manager-gateway" />
+        <module name="qf-api" />
+        <module name="qf-tenant-manager" />
+        <module name="qf-center-service" />
+        <module name="qf-driver-mqtt" />
+        <module name="qf-driver-gateway" />
+        <module name="qf-common-base" />
+        <module name="qf-common-profile" />
+        <module name="qf-common-sdk" />
+        <module name="qf-center-data" />
+        <module name="qf-center-auth" />
+        <module name="qf-user-manager" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="iot-qf-platform" options="-parameters" />
+      <module name="qf-api" options="-parameters" />
+      <module name="qf-center-auth" options="-parameters" />
+      <module name="qf-center-data" options="-parameters" />
+      <module name="qf-center-service" options="-parameters" />
+      <module name="qf-common-base" options="-parameters" />
+      <module name="qf-common-profile" options="-parameters" />
+      <module name="qf-common-sdk" options="-parameters" />
+      <module name="qf-driver-gateway" options="-parameters" />
+      <module name="qf-driver-mqtt" options="-parameters" />
+      <module name="qf-gateway" options="-parameters" />
+      <module name="qf-manager-gateway" options="-parameters" />
+      <module name="qf-tenant-manager" options="-parameters" />
+      <module name="qf-user-manager" options="-parameters" />
+    </option>
+  </component>
+</project>

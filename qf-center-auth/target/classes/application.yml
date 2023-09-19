@@ -1,0 +1,50 @@
+server:
+  port: 6300
+
+spring:
+  application:
+    name: qf-center-auth
+  profiles:
+    active:
+      - server
+      - register
+      - mysql
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+  redis:
+    database: 0
+  cache:
+    redis:
+      time-to-live: ${CACHE_REDIS_TIME_TO_LIVE:12H}
+
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username:   2834753143@qq.com # 邮箱 # 邮箱
+    password:   arevysofurdddhaa # 授权码
+    default-encoding: utf-8
+    properties:
+      mail:
+        smtp:
+          socketFactoryClass: javax.net.ssl.SSLSocketFactory
+springdoc:
+  swagger-ui:
+    # 修改Swagger UI路径
+    path: /swagger-ui.html
+    # 开启Swagger UI界面
+    enabled: true
+    api-docs:
+      # 修改api-docs路径
+      path: /v1/api-docs
+      # 开启api-docs
+      enabled: true
+    # 配置需要生成接口文档的扫描包
+    packages-to-scan: com.qf.auth.api
+    # 配置需要生成接口文档的接口路径
+#    paths-to-match: /brand/**,/admin/**
+

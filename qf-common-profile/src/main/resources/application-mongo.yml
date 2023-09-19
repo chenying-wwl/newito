@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      host: ${MONGO_HOST:qf-mongo}
+      #host: ${MONGO_HOST:localhost}
+      port: ${MONGO_PORT:27017}
+      database: ${MONGO_DATABASE:qf}
+      auth-type: ${MONGO_AUTH_TYPE:password}
+      username: ${MONGO_USERNAME:qf}
+      password: ${MONGO_PASSWORD:qf}

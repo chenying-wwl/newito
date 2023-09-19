@@ -1,0 +1,51 @@
+server:
+  port: 10010
+
+spring:
+  application:
+    name: @project.artifactId@
+  profiles:
+    active:
+      - server
+      - register
+      - mysql
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      #跨域处理，需要关闭具体微服务上的跨域设置，否则此设置无效
+      # 全局的跨域配置
+      globalcors:
+        #add-to-simple-url-handler-mapping: true # 解决options请求被拦截问题
+        # options请求 就是一种询问服务器是否浏览器可以跨域的请求
+        # 如果每次跨域都有询问服务器是否浏览器可以跨域对性能也是损耗
+        # 可以配置本次跨域检测的有效期maxAge
+        # 在maxAge设置的时间范围内，不去询问，统统允许跨域
+        corsConfigurations:
+          '[/**]':
+            allowedOriginPatterns: # 允许哪些网站的跨域请求
+              - "*"
+            allowedMethods: # 允许的跨域ajax的请求方式
+              - "GET"
+              - "POST"
+              - "DELETE"
+              - "PUT"
+              - "OPTIONS"
+            allowedHeaders: "*"    # 允许在请求中携带的头信息
+            allowCredentials: true    # 允许在请求中携带cookie
+            maxAge: 360000            # 本次跨域检测的有效期(单位毫秒)
+            # 有效期内，跨域请求不会一直发option请求去增大服务器压力
+      routes:
+        - id: qf-mqtt-driver
+          uri: lb://qf-driver-mqtt
+          # 断言: 用于拦截匹配用户在浏览器中输入的访问路径
+          predicates:
+            - Path=/driver/**

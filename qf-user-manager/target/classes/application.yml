@@ -1,0 +1,42 @@
+server:
+  port: 6600
+spring:
+  application:
+    name: qf-user-manager
+  profiles:
+    active:
+      - server
+      - register
+      - mysql
+      - mongo
+      - redis
+      - rabbitmq
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+  redis:
+    database: 0
+  cache:
+    redis:
+      time-to-live: ${CACHE_REDIS_TIME_TO_LIVE:12H}
+springdoc:
+  swagger-ui:
+    # 修改Swagger UI路径
+    path: /swagger-ui.html
+    # 开启Swagger UI界面
+    enabled: true
+    api-docs:
+      # 修改api-docs路径
+      path: /v1/api-docs
+      # 开启api-docs
+      enabled: true
+    # 配置需要生成接口文档的扫描包
+    packages-to-scan: com.qf.user.manager.api
+
+# 请求头中携带token的key也就是名字
+jwt:
+  token-header: token

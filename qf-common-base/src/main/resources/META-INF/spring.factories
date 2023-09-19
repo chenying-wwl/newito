@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.qf.common.exception.GlobalExceptionAdvice,\
+  com.qf.common.annotation.LogsAspect,\
+  com.qf.common.config.RestTemplateConfig,\
+  com.qf.common.config.MybatisPlusConfig,\
+  com.qf.common.config.ThreadPoolConfig,\
+  com.qf.common.config.OpenFeignConfig

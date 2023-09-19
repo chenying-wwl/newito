@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.qf.data.config.RedisTemplateConfig,\
+  com.qf.data.config.RedisCacheConfig,\
+  com.qf.data.utils.RedisUtil
