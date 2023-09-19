@@ -35,37 +35,37 @@
 
 * 租户审核
 
-![租户审核管理](\images\租户审核管理.png)
+![租户审核管理](https://github.com/chenying-wwl/newito/blob/main/images/租户审核管理.png)
 
 * 租户管理
 
-![租户管理](images\租户管理.png)
+![租户管理](https://github.com/chenying-wwl/newito/blob/main/images/租户管理.png)
 
 * 行业管理
 
-![行业管理](images\行业管理.png)
+![行业管理](https://github.com/chenying-wwl/newito/blob/main/images/行业管理.png)
 
 * 设备类型管理
 
-![设备类型管理](images\设备类型管理.png)
+![设备类型管理](https://github.com/chenying-wwl/newito/blob/main/images/设备类型管理.png)
 
 * 产品管理
 
-![产品管理](images\产品管理.png)
+![产品管理](https://github.com/chenying-wwl/newito/blob/main/images/产品管理.png)
 
 * 租户登录
 
-![租户登录](images\租户登录.png)
+![租户登录](https://github.com/chenying-wwl/newito/blob/main/images/租户登录.png)
 
 * 租户主页
 
-![租户主页](images\租户主页.png)
+![租户主页](https://github.com/chenying-wwl/newito/blob/main/images/租户主页.png)
 
 * 租户产品
 
-![租户产品管理](images\租户产品管理.png)
+![租户产品管理](https://github.com/chenying-wwl/newito/blob/main/images/租户产品管理.png)
 
 * 租户设备
 
-![租户设备](images\租户设备.png)
+![租户设备](https://github.com/chenying-wwl/newito/blob/main/images/租户设备.png)
 
