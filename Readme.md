@@ -31,7 +31,7 @@
 
 * 行政区区域管理
 
-  ![行政区管理](newito\images\行政区管理.png)
+  ![行政区管理](https://github.com/chenying-wwl/newito/blob/main/images/%E8%A1%8C%E6%94%BF%E5%8C%BA%E7%AE%A1%E7%90%86.png)
 
 * 租户审核
 
